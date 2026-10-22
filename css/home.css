@@ -1,0 +1,62 @@
+/* =========================
+   home.css
+   Styles used ONLY by index.html
+   ========================= */
+
+/* Row of resort cards */
+.resort-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    /* POSITIONING: relative so the badge can be placed inside the card */
+    position: relative;
+    flex-grow: 1;
+    width: 300px;
+
+    background-color: #eef6f5;
+    border-radius: 10px;
+    padding: 28px 20px 20px;
+}
+
+.card h3 {
+    padding-right: 90px;   /* leaves room for the badge */
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Badge in the top-right corner of each card */
+.badge {
+    /* POSITIONING: absolute, placed relative to .card */
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    background-color: #b23a00;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+/* =========================
+   MEDIA QUERY (small screens, 600px and below)
+   Cards stack in one column
+   ========================= */
+@media screen and (max-width: 600px) {
+    .resort-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

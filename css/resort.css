@@ -1,0 +1,56 @@
+/* =========================
+   resort.css
+   Styles used ONLY by the three resort pages
+   ========================= */
+
+/* Photo and quick-facts box side by side */
+.resort-top {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.resort-top .photo {
+    flex-grow: 2;
+}
+
+.resort-top aside {
+    flex-grow: 1;
+    background-color: #eef6f5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.resort-top img {
+    border-radius: 8px;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Quick facts table */
+table {
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 6px;
+}
+
+thead th {
+    background-color: #0b2545;
+    color: white;
+}
+
+/* =========================
+   MEDIA QUERY (small screens, 600px and below)
+   Photo and facts stack vertically
+   ========================= */
+@media screen and (max-width: 600px) {
+    .resort-top {
+        flex-direction: column;
+    }
+}

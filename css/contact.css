@@ -1,0 +1,47 @@
+/* =========================
+   contact.css
+   Styles used ONLY by contact.html (the form)
+   ========================= */
+
+form {
+    max-width: 500px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #6b7f99;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #13315c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0b2545;
+}
+
+/* =========================
+   MEDIA QUERY (small screens, 600px and below)
+   Button stretches full width on phones
+   ========================= */
+@media screen and (max-width: 600px) {
+    button {
+        width: 100%;
+    }
+}
