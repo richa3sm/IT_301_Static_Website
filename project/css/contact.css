@@ -31,7 +31,7 @@ button:hover {
     background-color: #0b2545;
 }
 
-/* On small screens the header and nav stack vertically */
+/* On small screens the submit button stretches full width */
 @media screen and (max-width: 600px) {
     button {
         width: 100%;

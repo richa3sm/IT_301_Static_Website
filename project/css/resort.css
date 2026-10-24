@@ -38,7 +38,7 @@ thead th {
     color: white;
 }
 
-/* On small screens the header and nav stack vertically */
+/* On small screens the trail map and quick facts stack vertically */
 @media screen and (max-width: 600px) {
     .resort-top {
         flex-direction: column;

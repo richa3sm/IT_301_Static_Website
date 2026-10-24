@@ -53,7 +53,7 @@
     border-radius: 8px;
 }
 
-/* On small screens the header and nav stack vertically */
+/* On small screens the resort cards stack in one column */
 @media screen and (max-width: 600px) {
     .resort-cards {
         flex-direction: column;
