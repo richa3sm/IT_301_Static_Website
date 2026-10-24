@@ -1,0 +1,45 @@
+.resort-top {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.resort-top .photo {
+    flex-grow: 2;
+}
+
+.resort-top aside {
+    flex-grow: 1;
+    background-color: #eef6f5;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.resort-top img {
+    border-radius: 8px;
+}
+
+.caption {
+    text-align: center;
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 6px;
+}
+
+thead th {
+    background-color: #0b2545;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .resort-top {
+        flex-direction: column;
+    }
+}
