@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #dce6f1;
+    color: #243447;
+}
+
+h1, h2, h3 {
+    font-family: "Oswald", sans-serif;
+    color: #0b2545;
+}
+
+a {
+    color: #b23a00;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b2545;
+    padding: 12px 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #13315c;
+    text-decoration: underline;
+}
+
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+footer {
+    background-color: #0b2545;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+/* On small screens the header and nav stack vertically */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        position: static;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        text-align: center;
+    }
+}
